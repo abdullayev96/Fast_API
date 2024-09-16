@@ -1,0 +1,8 @@
+<h1>Edit Item</h1>
+<form action="/admin/items/{{ item.id }}" method="post">
+  <label>Name</label>
+  <input type="text" name="name" value="{{ item.name }}">
+  <label>Price</label>
+  <input type="text" name="price" value="{{ item.price }}">
+  <button type="submit">Save</button>
+</form>
